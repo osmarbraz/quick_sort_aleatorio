@@ -45,7 +45,7 @@ public class Principal {
      * @return o pivo da troca
      */
     public static int particione(int A[], int p, int r) {
-        //x é o “pivô”
+        //x é o "pivô"
         int x = A[r];                       //Theta(1)
         int i = p - 1;                      //Theta(1)
         for (int j = p; j <= r - 1; j++) {  //Theta(n)
@@ -67,7 +67,7 @@ public class Principal {
      * @return o pivo da troca
      */
     public static int particioneAleatorio(int A[], int p, int r) {
-        //i é o “pivô”
+        //i é o "pivô"
         int i = aleatorio(p,r);             //Theta(1)        
         troca(A,i,r);                       //Theta(1)
         return particione(A,p,r);           //Theta(n)
