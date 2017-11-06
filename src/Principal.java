@@ -104,7 +104,7 @@ public class Principal {
         //Fim do vetor
         int r = A.length - 1;
 
-        System.out.println(">>> QuickSort <<<");
+        System.out.println(">>> QuickSort Aleatório<<<");
         System.out.println("Original: ");
         for (int i = 0; i <= r; i++) {
             System.out.println((i) + " - " + A[i]);
