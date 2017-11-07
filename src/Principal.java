@@ -75,6 +75,11 @@ public class Principal {
 
     /**
      * Executa o quicksort aleatório recursivo. 
+     * Algoritmos de ordenação podem ser ou não in-place ou estáveis.
+     * Um algoritmo de ordenação é in-place se a memória adicional requerida é 
+     * independente do tamanho do vetor que está sendo ordenado.
+     * O quicksort é in-place 
+     * 
      * Divisão: divida o vetor em dois subvetoresA[p ... q−1] e A[q+1...r] 
      * Conquista: ordena os dois subvetores recursivamente usando quicksort 
      * Combinação: nada a fazer, o vetor está ordenado. 
