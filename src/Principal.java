@@ -68,7 +68,7 @@ public class Principal {
      */
     public static int particioneAleatorio(int A[], int p, int r) {
         //i é o "pivô"
-        int i = aleatorio(p,r);             //Theta(1)        
+        int i = aleatorio(p,r);             //Theta(1)            
         troca(A,i,r);                       //Theta(1)
         return particione(A,p,r);           //Theta(n)
     }
