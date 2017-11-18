@@ -9,7 +9,7 @@
  *
  * Página 129 Cormen 3 ed
  *
- * Algoritmo QuickSort Aleatório
+ * Algoritmo QuickSort Aleatório/Ordenação Rápida Aleatório
  *
  * Atenção:
  * Vetor em java inicia em 0, os algoritmos consideram início em 1.
@@ -24,7 +24,7 @@
 public class Principal {
 
     /**
-     * Seleciona um numero aleatorio no intervalo de inicio a fim
+     * Seleciona um número aleatório no intervalo de ínicio a fim
      * @param inicio Inicio do intervalodo número aleatório
      * @param fim Fim do intervalo do número aleatório
      */
@@ -49,12 +49,13 @@ public class Principal {
      * 
      * Complexidade de tempo Theta(n).
      * T(n) = Theta(2n + 4) + O(2n) = Theta(n) 
+     * 
      * Slide 68 da aula 01/09/2017 .     
      * 
      * @param A Vetor com os dados
      * @param p Início do vetor
      * @param r Fim do vetor
-     * @return o pivo da troca
+     * @return o pivô da troca
      */
     public static int particione(int A[], int p, int r) {
         //x é o "pivô"
@@ -94,10 +95,12 @@ public class Principal {
      * independente do tamanho do vetor que está sendo ordenado.
      * O quicksort é in-place 
      * 
-     * Divisão: divida o vetor em dois subvetoresA[p ... q−1] e A[q+1...r] 
+     * Divisão: divide o vetor em dois subvetoresA[p ... q−1] e A[q+1...r] 
      * Conquista: ordena os dois subvetores recursivamente usando quicksort 
      * Combinação: nada a fazer, o vetor está ordenado. 
-     * Slide 68 
+     * 
+     * Slide 68 da aula 01/09/2017
+     * 
      * T(n) = T(k) + T(n−k−1) + Theta(n+1) 
      * Complexidade de tempo no caso médio O(n log n)
      *
@@ -123,7 +126,7 @@ public class Principal {
         //Fim do vetor
         int r = A.length;
 
-        System.out.println(">>> QuickSort Aleatório<<<");
+        System.out.println(">>> Algoritmo QuickSort Aleatório/Ordenação Rápida Aleatório <<<");
         System.out.println("Original: ");
         for (int i = 0; i < r; i++) {
             System.out.println((i+1) + " - " + A[i]);
