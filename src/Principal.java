@@ -24,8 +24,9 @@
 public class Principal {
 
     /**
-     * Seleciona um número aleatório no intervalo de ínicio a fim
-     * @param inicio Inicio do intervalodo número aleatório
+     * Seleciona um número aleatório no intervalo de ínicio a fim.
+     * 
+     * @param inicio Início do intervalodo número aleatório
      * @param fim Fim do intervalo do número aleatório
      */
     public static int aleatorio(int inicio, int fim) {
@@ -34,7 +35,8 @@ public class Principal {
     
     /**
      * Realiza a troca de posição de dois elementos do vetor.
-     * @param A Vetor que contem os dados
+     * 
+     * @param A Vetor que contém os dados
      * @param i Primeira posição de troca
      * @param j Segunda posição de troca
      */
@@ -90,6 +92,7 @@ public class Principal {
 
     /**
      * Executa o quicksort aleatório recursivo. 
+     * 
      * Algoritmos de ordenação podem ser ou não in-place ou estáveis.
      * Um algoritmo de ordenação é in-place se a memória adicional requerida é 
      * independente do tamanho do vetor que está sendo ordenado.
@@ -117,27 +120,28 @@ public class Principal {
     }
 
     public static void main(String args[]) {
-
+        
         //Vetor dos dados    
-        int A[] = {50, 70, 60, 90, 10, 30, 20, 40};
+        int A[] = {99, 33, 55, 77, 11, 22, 88, 66, 44}; //Qtde ímpar de elementos
+        //int A[] = {99, 33, 55, 77, 11, 22, 88, 66}; //Qtde par de elementos
 
-        //Inicio do vetor
+        //Início do vetor
         int p = 1;
         //Fim do vetor
         int r = A.length;
 
         System.out.println(">>> Algoritmo QuickSort Aleatório/Ordenação Rápida Aleatório <<<");
         System.out.println("Original: ");
-        for (int i = 0; i < r; i++) {
-            System.out.println((i+1) + " - " + A[i]);
+        for (int i = 1; i <= r; i++) {
+            System.out.println(i + " - " + A[i-1]);
         }
         
         //Ordena o vetor A de p até r
         quicksortAleatorio(A, p, r);
 
         System.out.println("Depois: ");
-        for (int i = 0; i < r; i++) {
-            System.out.println((i+1) + " - " + A[i]);
+        for (int i = 1; i <= r; i++) {
+            System.out.println(i + " - " + A[i-1]);
         }
     }
 }
