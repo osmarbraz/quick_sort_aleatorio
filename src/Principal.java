@@ -7,7 +7,7 @@
  *
  * Baseado nos slides 91 da aula 01/09/2017 
  *
- * Página 129 Cormen 3 ed
+ * Página 129 Thomas H. Cormen 3 ed
  *
  * Algoritmo QuickSort Aleatório/Ordenação Rápida Aleatório
  *
